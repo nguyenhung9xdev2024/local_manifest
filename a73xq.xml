@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+          
+        <remote name="github"
+                fetch="https://github.com/ROM-CUSTOM-SAMSUNG" />
+
+        <remote name="github"
+                fetch="https://github.com/ITTECH-ROM" />        
+
+        <remote name="github"
+                fetch="https://github.com/LineageOS" />        
+
+        <remote name="gitlab"
+                fetch="https://gitlab.com/nguyenhung9xdev2022" />
+
+        <!-- Remove some projects -->
+        <remove-project name="hardware/samsung" />
+
+        <!-- Sync trees -->
+        <project path="device/samsung/sm7325-common" name="ROM-CUSTOM-SAMSUNG/android_device_samsung_sm7325-common" remote="github" revision="lineage-20" />
+        <project path="device/samsung/a73xq" name="ROM-CUSTOM-SAMSUNG/android_device_samsung_a73xq" remote="github" revision="lineage-20" />
+        <project path="vendor/samsung/sm7325-common" name="ROM-CUSTOM-SAMSUNG/android_vendor_samsung_sm7325-common" remote="github" revision="lineage-20" />
+        <project path="vendor/samsung/a73xq" name="ITTECH-ROM/android_vendor_samsung_a73xq" remote="github" revision="lineage-20" />
+        <project path="kernel/samsung/sm7325" name="nguyenhung9xdev2022/android_kernel_samsung_sm7325" remote="gitlab" revision="lineage-20" />
+        <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-20" clone-depth="1" />
+        <project path="hardware/samsung/nfc" name="LineageOS/android_hardware_samsung_nfc" remote="github" revision="lineage-18.1" clone-depth="1" />
+
+</manifest>
