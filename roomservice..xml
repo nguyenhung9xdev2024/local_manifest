@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+          
+        <remote name="github"
+                fetch="https://github.com/nguyenhung9xdev2024" />
+
+        <remote name="github"
+                fetch="https://github.com/8890q" />        
+
+        <remote name="github"
+                fetch="https://github.com/LineageOS" />        
+
+        <!-- Remove some projects -->
+        <remove-project name="hardware/samsung" />
+        <remove-project name="vendor/lineage" />
+        <remove-project name="system/core" />
+
+        <!-- Sync trees -->
+        <project path="device/samsung/universal8890-common" name="nguyenhung9xdev2024/android_device_samsung_universal8890-common" remote="github" revision="lineage-18.1" />
+        <project path="device/samsung/hero2lte" name="nguyenhung9xdev2024/android_device_samsung_hero2lte" remote="github" revision="lineage-18.1" />
+        <project path="vendor/samsung" name="8890q/proprietary_vendor_samsung" remote="github" revision="lineage-18.1" />
+        <project path="kernel/samsung/universal8890" name="8890q/android_kernel_samsung_universal8890" remote="github" revision="lineage-18.1" />
+        <project path="vendor/lineage" name="nguyenhung9xdev2024/android_vendor_lineage" remote="github" revision="lineage-18.1" clone-depth="1" />
+        <project path="vendor/extra" name="nguyenhung9xdev2024/android_vendor_extra" remote="github" revision="main" clone-depth="1" />
+        <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.1" clone-depth="1" />
+        <project path="system/core" name="nguyenhung9xdev2024/android_system_core" remote="github" revision="lineage-18.1" clone-depth="1" />
+
+</manifest>
